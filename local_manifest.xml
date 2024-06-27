@@ -6,6 +6,8 @@
           fetch="https://github.com/sotodrom" />
   <remote name="texascake"
           fetch="https://github.com/texascake" />
+  <remote name="sonic"
+          fetch="https://github.com/SonicBSV" />
 
         <!-- Sync trees -->
         <project path="device/asus/X01BD" name="android_device_asus_X01BD" remote="texascake" revision="14" />
