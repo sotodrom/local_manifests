@@ -2,8 +2,8 @@
 
 <manifest>
 
-  <remote name="Tiktodz"
-          fetch="https://github.com/Tiktodz" />
+  <remote name="sotod"
+          fetch="https://github.com/sotodrom" />
   <remote name="sonic"
           fetch="https://github.com/SonicBSV" />
 
@@ -11,5 +11,8 @@
         <project path="device/asus/X00TD" name="android_device_asus_X01BD-4.19" remote="sonic" revision="lineage-21.0" />
         <project path="vendor/asus" name="android_vendor_asus_X00TD" remote="sonic" revision="lineage-21.0" />
         <project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common-4.19" remote="sonic" revision="lineage-21.0" />
-
+        <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" remote="sonic" revision="master" />
+        <remove path="LineageOS/android_device_qcom_sepolicy" />
+        <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="sotod" revision="lineage-21.0-legacy-um" />
+  
 </manifest>
