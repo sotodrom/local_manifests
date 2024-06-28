@@ -16,5 +16,9 @@
         <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660-4.19" remote="sonic" revision="master" />
         <remove-project name="LineageOS/android_device_qcom_sepolicy" />
         <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="sotod" revision="lineage-21.0-legacy-um" />
-  
+        <remove-project name="LineageOS/android_packages_services_Car" />
+        <remove-project name="LineageOS/android_packages_modules_Connectivity" />
+        <project path="packages/services/Car" name="android_packages_services_Car" remote="texascake" revision="lineage-21.0" />
+        <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="texascake" revision="lineage-21.0" />
+
 </manifest>
