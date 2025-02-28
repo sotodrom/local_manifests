@@ -10,11 +10,11 @@ echo -e "$cyan***********************************************"
 echo -e "           BUILDING ROM from Devspaces CLI     "
 echo -e "**********************************************$nocol"
 
-rm -rf .repo/manifests
+rm -rf .repo/local_manifests/
 repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
 git clone --depth=1 https://github.com/sotodrom/local_manifests -b vic .repo/local_manifests
 /opt/crave/resync.sh
-source build/envsetup.sh
+. build/envsetup.sh
 lunch pixelage_X00TD-ap4a-userdebug
 export TZ=Asia/Jakarta
 export PIXELAGE_BUILD=X00TD
