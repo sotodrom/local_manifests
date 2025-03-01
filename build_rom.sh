@@ -2,18 +2,14 @@
 
 #set -e
 
-cyan='\033[0;36m'
-blue='\033[0;34m'
-nocol='\033[0m'
+rm -rf .repo/local_manifests/ packages/apps/Aperture
 
-echo -e "$cyan***********************************************"
-echo -e "           BUILDING ROM from Devspaces CLI     "
-echo -e "**********************************************$nocol"
-
-rm -rf .repo/local_manifests/
 repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
+
 git clone --depth=1 https://github.com/sotodrom/local_manifests -b vic .repo/local_manifests
+
 /opt/crave/resync.sh
+
 . build/envsetup.sh
 lunch pixelage_X00TD-ap4a-userdebug
 export TZ=Asia/Jakarta
