@@ -6,6 +6,7 @@
           fetch="https://github.com/sotodrom" />
 
         <!-- Sync trees -->
-        <project path="device/asus/X00TD" name="android_device_asus_X00TD" remote="sotod" revision="eas" />
+        <project path="device/asus/X00TD" name="device_asus_X00TD" remote="sotod" revision="los" />
+        <project path="vendor/asus" name="proprietary_vendor_asus" remote="sotod" revision="44" />
 
 </manifest>
