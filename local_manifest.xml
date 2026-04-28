@@ -5,7 +5,7 @@
   <remote name="sotod"
           fetch="https://github.com/sotodrom" />
   <remote name="PixelOS"
-          fetch="https://gitlab.com/PixelOS-Devices" />
+          fetch="https://github.com/PixelOS-Devices" />
   <remote name="NoPrincessHere"
           fetch="https://gitlab.com/NoPrincessHere" />
 
