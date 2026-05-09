@@ -2,18 +2,13 @@
 
 <manifest>
 
-  <remote name="sotod"
-          fetch="https://github.com/sotodrom" />
-  <remote name="PixelOS"
-          fetch="https://github.com/PixelOS-Devices" />
-  <remote name="NoPrincessHere"
-          fetch="https://gitlab.com/NoPrincessHere" />
+        <remote name="sotod"
+        fetch="https://github.com/sotodrom" />
 
         <!-- Sync trees -->
-        <project path="device/asus/X00TD" name="device_asus_X00TD-4.19" remote="sotod" revision="dyn" />
-        <project path="device/asus/sdm660-common" name="device_asus_sdm660-common-4.19" remote="sotod" revision="dyn" />
-        <project path="vendor/asus/X00TD" name="proprietary_vendor_asus_X00TD" remote="NoPrincessHere" revision="sixteen-qpr2" />
-        <project path="vendor/asus/sdm660-common" name="proprietary_vendor_asus_sdm660-common" remote="sotod" revision="dyn" />
-        <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660" remote="PixelOS" revision="sixteen-qpr2" />
+        <project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="sotod" revision="16.2" />
+        <project path="device/asus/X00TD" name="android_device_asus_X00TD" remote="sotod" revision="16.2" />
+        <project path="vendor/asus/sdm660-common" name="proprietary_vendor_asus_sdm660-common" remote="sotod" revision="master" />
+        <project path="vendor/asus/X00TD" name="proprietary_vendor_asus_X00TD" remote="sotod" revision="master" />
 
 </manifest>
